@@ -8,6 +8,7 @@ import MutableArithmetics
 const MA = MutableArithmetics
 
 export AbstractPolynomialLike, AbstractTermLike, AbstractMonomialLike
+
 """
     AbstractPolynomialLike{T}
 
@@ -47,7 +48,7 @@ Abstract type for a monomial, i.e. a product of variables elevated to a nonnegat
 abstract type AbstractMonomial <: AbstractMonomialLike end
 
 """
-    AbstractTerm{T} <: AbstractTerm{T}
+    AbstractTerm{T} <: AbstractTermLike{T}
 
 Abstract type for a term of coefficient type `T`, i.e. the product between a value of type `T` and a monomial.
 """
